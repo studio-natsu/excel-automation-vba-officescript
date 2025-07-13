@@ -1,8 +1,6 @@
 /*基本給、積立金、通勤手当の内訳を積み立て縦棒グラフにする */
 
-//ToDo:X軸は人の名前にならないのか？、
-
-//定義
+//メイン関数
 function main(workbook: ExcelScript.Workbook) { // 現在開いてるシートを取得
                                 //「スプレッドシート全体」を操作するためのオブジェクト
   const sourceSheet = workbook.getActiveWorksheet(); 
