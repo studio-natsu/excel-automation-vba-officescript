@@ -12,10 +12,10 @@ Sub ScheduleEmailToSendBox()
     ' メール本文の作成
     MailBody = Range("C1").Value & vbCrLf & Range("D1").Value
 
-    ' 今日の16時を送信時間として設定
-    SendTime = Date + TimeValue("10:15:00")
+    ' 今日の17時を送信時間として設定
+    SendTime = Date + TimeValue("17:00:00")
 
-    ' もし現在が16時を過ぎていたら、翌日の16時に設定
+    ' もし現在が17時を過ぎていたら、翌日の17時に設定
     If Now > SendTime Then
         SendTime = SendTime + 1
     End If
